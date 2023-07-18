@@ -41,6 +41,10 @@ const App = () => {
             <img src='https://www.techspot.com/images2/downloads/topdownload/2021/04/2021-04-07-ts3_thumbs-8ba.png' className='w-12 m-2'></img>
             <Button text='Github'></Button>
           </div>
+          <div className='flex flex-row items-center justify-center'>
+            <img src='https://lh3.googleusercontent.com/1NWSffUULql2uPj0hT_WTwSTfmUv0yuXk0Rq0Q6tpcUZbMurPESyK8W2NBqpa8SRpA=w300' className='w-12 m-2'></img>
+            <Button text='Aplicacion Tiempo' onClick={() => navigate('/clima')}></Button>
+          </div>
         </div>
         {/*Div que contendra la parte de Contact*/}
         <div className='bg-[#6553b0] w-96 h-auto rounded-lg m-5 ml-10 text-center'>

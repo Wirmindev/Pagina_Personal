@@ -44,7 +44,7 @@ const App = () => {
   //---------------------------------------------------------------------------------------
   return (
     <div className="bg-[#27222c] h-screen w-screen flex items-center justify-center">
-      <div className="h-90 w-5/6 bg-[#6553b0] flex flex-col rounded-lg">
+      <div className="h-90 w-5/6 bg-[#6553b0] flex flex-col rounded-lg p-10">
         <div className="flex flex-col items-center">
           <h1 className="text-center text-white text-4xl">Inicio de sesión</h1>
           <h1 className="text-center text-white text-2xl">Contador: {contador}</h1>
@@ -55,13 +55,12 @@ const App = () => {
           <Textinput text="Verificar Contraseña" type="password" placeholder="Verifica Contraseña" onChange={(e) => setFormState((prev) => ({...prev, vpassworld: e.target.value}))}></Textinput>
         </div>
         <div className="flex flex-row items-center justify-center">
-          <Button text="Home" onClick={() => navigate('/')}></Button>
           <Button text="Aplicar"></Button>
           <Button text="Reset"></Button>
           <Button text="+1" onClick={sumarcontador}></Button>
           <Button text="-1" onClick={restarcontador}></Button>
         </div>
-        
+        <Button text="Home" onClick={() => navigate('/')}></Button>
       </div>
     </div>
   )
