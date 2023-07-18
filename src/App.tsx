@@ -14,7 +14,7 @@ const App = () => {
         <Button text='Proyect'></Button>
         <Button text='About'></Button>
         <Button text='Contact'></Button>
-        <Button text='Login' onClick={() => navigate('/registro')}></Button>
+        <Button text='Login' onClick={() => navigate('/login')}></Button>
       </nav>
       {/*Creacion de un div que contendra toda la información de About*/}
       <div className="flex flex-row items-center justify-center">
@@ -39,11 +39,11 @@ const App = () => {
           <b className="text-[#ea66a1] text-3xl p-2">Proyects</b>
           <div className='flex flex-row items-center justify-center'>
             <img src='https://www.techspot.com/images2/downloads/topdownload/2021/04/2021-04-07-ts3_thumbs-8ba.png' className='w-12 m-2'></img>
-            <Button text='Github'></Button>
+            <a href='https://github.com/Wirmindev' target='_blank'><Button text='Github'></Button></a>
           </div>
           <div className='flex flex-row items-center justify-center'>
             <img src='https://lh3.googleusercontent.com/1NWSffUULql2uPj0hT_WTwSTfmUv0yuXk0Rq0Q6tpcUZbMurPESyK8W2NBqpa8SRpA=w300' className='w-12 m-2'></img>
-            <Button text='Aplicacion Tiempo' onClick={() => navigate('/clima')}></Button>
+            <Button text='Weather application' onClick={() => navigate('/clima')}></Button>
           </div>
         </div>
         {/*Div que contendra la parte de Contact*/}
@@ -51,15 +51,15 @@ const App = () => {
           <b className=" text-[#ea66a1] text-3xl p-2">Contact</b>
           <div className='flex flex-row items-center justify-center'>
             <img src='https://img.freepik.com/iconos-gratis/linkedin_318-187585.jpg' className='w-12 m-2'></img>
-            <Button text='Linkeding'></Button>
+            <a href='https://www.linkedin.com/in/daniellopezcervera/' target='_blank'><Button text='Linkeding'></Button></a>
           </div>
           <div className='flex flex-row items-center justify-center'>
             <img src='https://thekreat0r.github.io/TheKreat0r/img/IMG%20contactos/artstation.png' className='w-12 m-2'></img>
-            <Button text='ArtStation'></Button>
+            <a href='https://www.artstation.com/wirmin' target='_blank'><Button text='ArtStation'></Button></a>
           </div>
           <div className='flex flex-row items-center justify-center'>
             <img src='https://freelogopng.com/images/all_img/1657906383gmail-icon-png.png' className='w-12 m-2'></img>
-            <Button text='Gmail'></Button>
+            <a href='mailto:dalocervera@gmail.com' target='_blank'><Button text='Gmail'></Button></a>
           </div>
         </div>
       </div>

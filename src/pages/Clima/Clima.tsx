@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Textinput } from './component/atom/input/Textinput.component';
-import { Button } from './component/atom/button/Button.component';
+import { Textinput } from '../../component/atom/input/Textinput.component';
+import { Button } from '../../component/atom/button/Button.component';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -200,7 +200,7 @@ const App = () => {
 
     return (
         <div className='w-screen h-screen bg-[#27222c] flex items-center justify-center'>
-            <div className='h-90 w-90 bg-[#6553b0] flex flex-col rounded-lg p-5 m-5'>
+            <div className='h-90 w-90 bg-[#6553b0] flex flex-col rounded-lg p-12 m-5'>
                 <div className='flex fex-row'>
                     <h1 className='text-white m-2'>Ubicación: {weather?.location.name}</h1>
                     <h1 className=' text-orange-200 m-2'>{weather?.location.country}</h1>
@@ -215,9 +215,9 @@ const App = () => {
                             <img src={date.day.condition.icon}></img>
                         </div>
                             <div className='flex'>
-                                <h1 className='text-white m-1 '>Max {date.day.maxtemp_c}</h1>
-                                <h1 className='text-white m-1'>Min {date.day.mintemp_c}</h1>
-                                <h1 className='text-white m-1'>Media {date.day.avgtemp_c}</h1>
+                                <h1 className='text-white m-1 '>Max {date.day.maxtemp_c}ºC</h1>
+                                <h1 className='text-white m-1'>Min {date.day.mintemp_c}ºC</h1>
+                                <h1 className='text-white m-1'>Media {date.day.avgtemp_c}ºC</h1>
                             </div>
                             <h1 className='text-white'>{date.date}</h1>
                         </div>
