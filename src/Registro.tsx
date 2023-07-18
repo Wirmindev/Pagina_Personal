@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Button } from "./component/atom/button/Button.component"
 import { Textinput } from "./component/atom/input/Textinput.component"
+import { useNavigate } from 'react-router-dom';
 
 interface Forminterface {
   name: string;
@@ -20,6 +21,8 @@ const inicialform: Forminterface =
 }
 
 const App = () => {
+
+  const navigate = useNavigate();
 
   const [formState, setFormState] = useState<Forminterface>(inicialform)
   console.log(formState);
@@ -52,11 +55,13 @@ const App = () => {
           <Textinput text="Verificar Contraseña" type="password" placeholder="Verifica Contraseña" onChange={(e) => setFormState((prev) => ({...prev, vpassworld: e.target.value}))}></Textinput>
         </div>
         <div className="flex flex-row items-center justify-center">
+          <Button text="Home" onClick={() => navigate('/')}></Button>
           <Button text="Aplicar"></Button>
           <Button text="Reset"></Button>
           <Button text="+1" onClick={sumarcontador}></Button>
           <Button text="-1" onClick={restarcontador}></Button>
         </div>
+        
       </div>
     </div>
   )
