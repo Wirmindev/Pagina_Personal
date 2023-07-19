@@ -3,6 +3,7 @@ import {Home} from "../pages/Home/Home"
 import {Registro} from "../pages/Registro/Registro"
 import {Clima} from "../pages/Clima/Clima"
 import {Login} from "../pages/Login/Login"
+import { ProtectedRoutes } from "./Protected.routes"
 
 
 export const AppRoutes = () => {
@@ -10,7 +11,9 @@ export const AppRoutes = () => {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/registro" element={<Registro />} />
-            <Route path="/clima" element={<Clima/>} />
+            <Route element={<ProtectedRoutes />}>
+                <Route path="/clima" element={<Clima/>} />
+            </Route>
             <Route path="/login" element={<Login/>} />
         </Routes>
     )

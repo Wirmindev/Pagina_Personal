@@ -19,7 +19,7 @@ interface AppContextI {
 export const AppCotext = React.createContext({} as AppContextI);
 
 export const Provider = ({ children }: any) => {
-    const [token, setToken] = useState<string>(localStorage.getItem('token') || '');
+    const [token, setToken] = useState<string>(localStorage.getItem('token') || '');
     const [user, setUser] = useState<User | null>(JSON.parse(localStorage.getItem('user') || '{}'));
 
     const values = {
