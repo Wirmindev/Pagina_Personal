@@ -20,7 +20,7 @@ const inicialform: Forminterface =
   vpassworld: ""
 }
 
-const App = () => {
+export const Registro = () => {
 
   const navigate = useNavigate();
 
@@ -48,4 +48,4 @@ const App = () => {
     </div>
   )
 }
-export default App
+

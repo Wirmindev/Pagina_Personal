@@ -159,7 +159,7 @@ export interface Location {
     localtime: string;
 }
 
-const App = () => {
+export const Clima = () => {
 
     const navigate = useNavigate();
 
@@ -230,4 +230,4 @@ const App = () => {
         </div>
     )
 }
-export default App
+
