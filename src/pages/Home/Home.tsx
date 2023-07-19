@@ -11,9 +11,6 @@ export const Home = () => {
     <div className="felx bg-[#27222c] w-screen h-screen">
       {/*Creación de un nav, con los botones creados en su interior*/}
       <nav className="bg-[#6553b0] rounded-lg flex items-center justify-center shadow-md shadow-gray-600">
-        <Button text='Proyect'></Button>
-        <Button text='About'></Button>
-        <Button text='Contact'></Button>
         <Button text='Login' onClick={() => navigate('/login')}></Button>
       </nav>
       {/*Creacion de un div que contendra toda la información de About*/}
@@ -35,7 +32,7 @@ export const Home = () => {
       </div>
       <div className='flex flex-row items-center justify-center'>
         {/*Div que contendra la parte de Projects*/}
-        <div className='bg-[#6553b0] w-64 h-auto rounded-lg m-5 mr-10 text-center'>
+        <div className='bg-[#6553b0] w-auto h-auto rounded-lg m-5 mr-10 text-center p-5'>
           <b className="text-[#ea66a1] text-3xl p-2">Proyects</b>
           <div className='flex flex-row items-center justify-center'>
             <img src='https://www.techspot.com/images2/downloads/topdownload/2021/04/2021-04-07-ts3_thumbs-8ba.png' className='w-12 m-2'></img>
@@ -45,9 +42,17 @@ export const Home = () => {
             <img src='https://lh3.googleusercontent.com/1NWSffUULql2uPj0hT_WTwSTfmUv0yuXk0Rq0Q6tpcUZbMurPESyK8W2NBqpa8SRpA=w300' className='w-12 m-2'></img>
             <Button text='Weather application' onClick={() => navigate('/clima')}></Button>
           </div>
+          <div className='flex flex-row items-center justify-center'>
+            <img src='https://cdn-icons-png.flaticon.com/512/189/189715.png' className='w-12 m-2'></img>
+            <Button text='Convert Money' onClick={() => navigate('/convertmoney')}></Button>
+          </div>
+          <div className='flex flex-row items-center justify-center'>
+            <img src='https://cdn-icons-png.flaticon.com/512/603/603463.png' className='w-12 m-2'></img>
+            <Button text='Convert Temperature' onClick={() => navigate('/converttemperature')}></Button>
+          </div>
         </div>
         {/*Div que contendra la parte de Contact*/}
-        <div className='bg-[#6553b0] w-96 h-auto rounded-lg m-5 ml-10 text-center'>
+        <div className='bg-[#6553b0] w-auto h-auto rounded-lg m-5 ml-10 text-center p-5'>
           <b className=" text-[#ea66a1] text-3xl p-2">Contact</b>
           <div className='flex flex-row items-center justify-center'>
             <img src='https://img.freepik.com/iconos-gratis/linkedin_318-187585.jpg' className='w-12 m-2'></img>
