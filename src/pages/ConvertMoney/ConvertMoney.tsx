@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import { Button } from '../../component/atom/button/Button.component';
-import { Textinput } from "../../component/atom/input/Textinput.component";
+import { Button } from '../../component/atom/Button/Button.component';
+import { Textinput } from "../../component/atom/Input/Textinput.component";
 import { useState } from 'react';
 
 interface Converterinterface
