@@ -5,7 +5,7 @@ import {Clima} from "../pages/Clima/Clima"
 import {Login} from "../pages/Login/Login"
 import { ProtectedRoutes } from "./Protected.routes"
 import {ConvertMoney} from "../pages/ConvertMoney/ConvertMoney"
-import {ConvertTemperature} from"../pages/ConvertTemperature/Converttemperature"
+import {ConvertTemperature} from"../pages/ConvertTemperature/ConvertTemperature"
 
 
 export const AppRoutes = () => {
