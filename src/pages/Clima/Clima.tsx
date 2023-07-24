@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Textinput } from '../../component/atom/Input/Textinput.component';
-import { Button } from '../../component/atom/Button/Button.component';
+import { Button } from '../../component/atom/button/Button.component';
 import { useNavigate } from 'react-router-dom';
 
 
