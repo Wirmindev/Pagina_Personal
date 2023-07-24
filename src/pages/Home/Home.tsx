@@ -23,7 +23,7 @@ export const Home = () => {
         <Cards title='Projects'>
           <CardButton title='Github' href='https://github.com/Wirmindev' img='https://www.techspot.com/images2/downloads/topdownload/2021/04/2021-04-07-ts3_thumbs-8ba.png' />
           <CardButton title='Weather application' internalNavigation onClick={() => navigate('/clima')} img='https://lh3.googleusercontent.com/1NWSffUULql2uPj0hT_WTwSTfmUv0yuXk0Rq0Q6tpcUZbMurPESyK8W2NBqpa8SRpA=w300' />
-          <CardButton title='Convert Mone' internalNavigation onClick={() => navigate('/convertmoney')} img='https://cdn-icons-png.flaticon.com/512/189/189715.png' />
+          <CardButton title='Convert Money' internalNavigation onClick={() => navigate('/convertmoney')} img='https://cdn-icons-png.flaticon.com/512/189/189715.png' />
           <CardButton title='Convert Temperature' internalNavigation onClick={() => navigate('/converttemperature')} img='https://cdn-icons-png.flaticon.com/512/603/603463.png' />
         </Cards>
         {/*Componente que contendra la parte de Contact*/}

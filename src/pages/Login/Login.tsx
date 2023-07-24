@@ -65,7 +65,7 @@ export const Login = () => {
   //---------------------------------------------------------------------------------------
   return (
     <div className="bg-[#27222c] h-screen w-screen flex items-center justify-center">
-      <div className="h-90 w-64 bg-[#6553b0] flex flex-col rounded-lg p-2">
+      <div className="h-90 w-92 bg-[#6553b0] flex flex-col rounded-lg p-2">
         <form method="POST" onSubmit={onSubmit}>
           <div className="flex flex-col items-center">
             <h1 className="text-center text-white text-4xl">Login</h1>
@@ -78,7 +78,7 @@ export const Login = () => {
           </div>
         </form>
         <div className='bg-[#7661c9] flex rounded-lg p-1'>
-          <h1 className='text-white text-center'>¿No eres mienbro?</h1>
+          <h1 className='text-white text-center m-5'>¿No eres mienbro?</h1>
           <Button text="¡Registrate!" onClick={() => navigate('/registro')}></Button>
         </div>
       </div>
