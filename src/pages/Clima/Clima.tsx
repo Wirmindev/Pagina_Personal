@@ -199,21 +199,21 @@ export const Clima = () => {
     }
 
     return (
-        <div className='w-max h-max sm:h-screen sm:w-screen bg-[#27222c] flex items-center justify-center'>
-            <div className='h-max w-max bg-[#6553b0] flex flex-col rounded-lg p-20 sm:m-5'>
+        <div className='w-full h-full sm:h-screen sm:w-screen bg-[#6553b0] flex items-center justify-center'>
+            <div className='bg-[#6553b0] flex flex-col rounded-lg p-8'>
                 <div className='flex-1 sm:flex sm:flex-row'>
                     <h1 className='text-white m-2'>Ubicación: {weather?.location.name}</h1>
                     <h1 className=' text-orange-200 m-2'>{weather?.location.country}</h1>
                     <img className='w-20' src={weather?.current.condition.icon}></img>
                 </div>
-                <h1 className=' text-white text-center text-6xl m-3'>{weather?.current.temp_c.toFixed(0)} Cº {iconotemp()}</h1>
+                <h1 className=' text-white text-center text-6xl'>{weather?.current.temp_c.toFixed(0)} Cº {iconotemp()}</h1>
                 <h1 className="text-white m-2 text-center"> Humedad: {weather?.current.humidity}</h1>
-                <div className=' flex-1 justify-between h-20 sm:flex sm:flex-row'>
+                <div className='flex-1 justify-between h-20 sm:flex sm:flex-row'>
                     {weather?.forecast.forecastday.map(date => (
                         <div className='bg-[#ea66a1] m-2 p-2 rounded-lg text-center'>
-                        <div className='flex items-center justify-center'>
-                            <img src={date.day.condition.icon}></img>
-                        </div>
+                            <div className='flex items-center justify-center'>
+                                <img src={date.day.condition.icon}></img>
+                            </div>
                             <div className='flex'>
                                 <h1 className='text-white m-1 '>Max {date.day.maxtemp_c}ºC</h1>
                                 <h1 className='text-white m-1'>Min {date.day.mintemp_c}ºC</h1>
@@ -224,8 +224,10 @@ export const Clima = () => {
                     ))}
                 </div>
                 <Textinput text='Ubicación' type='text' placeholder='Buscar Ubicación' onChange={(e) => setUbicacion(e.target.value)}></Textinput>
+
                 <Button text='Ir a ubicación' onClick={peticion}></Button>
                 <Button text='Home' onClick={() => navigate('/')}></Button>
+
             </div>
         </div>
     )
