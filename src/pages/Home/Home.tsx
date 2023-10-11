@@ -6,6 +6,7 @@ import { CardButton } from '../../component/atom/CardButton/CardButton.component
 import { Bottom } from '../../component/atom/Bottom/Bottom.component';
 import { BgVideo } from '../../component/atom/Video/Video.component';
 import { Background } from '../../component/atom/Background/Background.component';
+//Hola soy un comentario.
 export const Home = () => {
 
   const navigate = useNavigate();
